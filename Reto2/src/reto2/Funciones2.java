@@ -34,7 +34,7 @@ public class Funciones2 {
 		} while (opcion != 1 && opcion != 2);
 		if (opcion == 1) return Litros_Gal(v);
 		else return Gal_Litros(v);
-	}
+	} 
 	
 public static double Celsius_Fah(double temp) {
 	return (temp * (9/5)) + 32;
