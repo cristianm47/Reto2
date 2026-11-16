@@ -31,7 +31,7 @@ public class Funciones3 {
 	}
 		
 		
-	public static void menuMAngulo () {
+	public static void menuAngulo () {
 		Scanner sc = new Scanner(System.in);
 			
 		System.out.println("¿Qué quieres convertir?");
