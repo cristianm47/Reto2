@@ -7,4 +7,5 @@ public static double temp_Celsius_Fah(double temp) {
 public static double temp_Fah_Celsius(double temp) {
 	return (temp - 32) * (5.0/9.0);
 }
+
 }
