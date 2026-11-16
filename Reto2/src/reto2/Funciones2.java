@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Funciones2 {  
 	
-	public static double Temp_Celsius_Fah (double t) {
+	public static double menuTemperatura (double t) {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("¿Qué quieres convertir?");
@@ -20,7 +20,7 @@ public class Funciones2 {
 		else return Fah_Celsius(t);
 	}	
 	
-	public static double Vol_Litros_Gal (double v) {
+	public static double menuVolumen (double v) {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("¿Qué quieres convertir?");
