@@ -1,6 +1,6 @@
 package reto2;
 
-public class Funciones2 {
+public class Funciones2 { 
 public static double Temp_Celsius_Fah(double temp) {
 	return (temp * (9/5)) + 32;
 }
