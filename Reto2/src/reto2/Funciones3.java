@@ -23,7 +23,7 @@ public class Funciones3 {
 		} else if (opcion == 2) {
 			System.out.print("Introduce los dólares: ");
 			double dolar = Double.parseDouble(sc.nextLine());
-			System.out.println(dolar + " $ -> " + dolarAeuro(euro) + " €");
+			System.out.println(dolar + " $ -> " + dolarAeuro(dolar) + " €");
 		}
 		
 		sc.close();
