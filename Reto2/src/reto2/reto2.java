@@ -14,6 +14,8 @@ public class reto2 {
 			System.out.println("2. Peso");
 			System.out.println("3. Temperatura");
 			System.out.println("4. Volumen");
+			System.out.println("5. Moneda");
+			System.out.println("6. Ángulo");
 			System.out.println("0. Salir");
 			System.out.println("-> ");
 			operacion = Integer.parseInt(sc.nextLine());
@@ -25,10 +27,16 @@ public class reto2 {
 					Funciones1.menuPeso();
 					break;
 				case 3:
-					//Temperatura
+					Funciones2.menuTemperatura();
 					break;
 				case 4:
-					//Volumen
+					Funciones2.menuVolumen();
+					break;
+				case 5:
+					Funciones2.menuMoneda();
+					break;
+				case 6:
+					Funciones2.menuAngulo();
 					break;
 				case 0:
 					System.out.println("Fin del programa.");
