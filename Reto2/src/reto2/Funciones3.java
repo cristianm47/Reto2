@@ -27,6 +27,7 @@ public class Funciones3 {
 	}
 	
 	
+	
 	public static double menuMAngulo(double a) {
 		Scanner sc = new Scanner(System.in);
 		
