@@ -29,7 +29,7 @@ public class Funciones2 {
 		return;
 	}	
 	
-	public static void menuVolumen (double v) {
+	public static void menuVolumen () {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("¿Qué quieres convertir?");
