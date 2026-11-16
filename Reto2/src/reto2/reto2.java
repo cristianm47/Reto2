@@ -7,7 +7,7 @@ public class reto2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int operacion, valor;
+		int operacion;
 		do {
 			System.out.println("Selecciona el tipo de conversión:");
 			System.out.println("1. Longitud");
