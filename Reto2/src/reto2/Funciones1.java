@@ -31,7 +31,7 @@ public class Funciones1 {
 		return;
 	}
 	
-	public static void menuPeso(double p) {
+	public static void menuPeso() {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Selecciona la conversión de peso:");
@@ -42,13 +42,20 @@ public class Funciones1 {
 		int opcion;
 		do {
 			opcion = Integer.parseInt(sc.nextLine());
-			if (opcion != 1 && opcion != 2) System.out.print("-> ");
-		} while (opcion != 1 && opcion != 2);
+			if (opcion != 1 && opcion != 2 && opcion != 0) System.out.print("-> ");
+		} while (opcion != 1 && opcion != 2 && opcion != 0);
 		if (opcion == 1) {
-			
-		} else {
-			
+			System.out.print("Introduce los kilogramos: ");
+			double kg = Double.parseDouble(sc.nextLine());
+			System.out.println(kg + " Kg -> " + kgALibras(kg) + " libras");
+		} else if (opcion == 2) {
+			System.out.print("Introduce las libras: ");
+			double libras = Double.parseDouble(sc.nextLine());
+			System.out.println(libras + " libras -> " + librasAKg(libras) + " Kg");
 		}
+		
+		sc.close();
+		return;
 	}
 	
 	private static double millasAKm(double millas) {
