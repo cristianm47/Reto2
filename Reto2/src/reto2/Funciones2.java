@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Funciones2 {  
 	
-	public static double menuTemperatura (double t) {
+	public static void menuTemperatura () {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("¿Qué quieres convertir?");
@@ -14,13 +14,22 @@ public class Funciones2 {
 		int opcion;
 		do {
 			opcion = Integer.parseInt(sc.nextLine());
-			if (opcion != 1 && opcion != 2) System.out.print("-> ");
-		} while (opcion != 1 && opcion != 2);
-		if (opcion == 1) return Celsius_Fah(t);
-		else return Fah_Celsius(t);
+			if (opcion != 1 && opcion != 2 && opcion != 0) System.out.print("-> ");
+		} while (opcion != 1 && opcion != 2 && opcion != 0);
+		if (opcion == 1) {
+			System.out.print("Introduce las millas: ");
+			double celsius = Double.parseDouble(sc.nextLine());
+			System.out.println(celsius + " celsius -> " + Celsius_Fah(celsius) + " fahrenheit");
+		} else if (opcion == 2) {
+			System.out.print("Introduce los kilómetros: ");
+			double fahrenheit = Double.parseDouble(sc.nextLine());
+			System.out.println(fahrenheit + " fahrenheit -> " + Fah_Celsius(fahrenheit) + " celsius");
+		}
+		sc.close();
+		return;
 	}	
 	
-	public static double menuVolumen (double v) {
+	public static void menuVolumen (double v) {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("¿Qué quieres convertir?");
@@ -30,25 +39,35 @@ public class Funciones2 {
 		int opcion;
 		do {
 			opcion = Integer.parseInt(sc.nextLine());
-			if (opcion != 1 && opcion != 2) System.out.print("-> ");
-		} while (opcion != 1 && opcion != 2);
-		if (opcion == 1) return Litros_Gal(v);
-		else return Gal_Litros(v);
+			if (opcion != 1 && opcion != 2 && opcion != 0) System.out.print("-> ");
+		} while (opcion != 1 && opcion != 2 && opcion != 0);
+		if (opcion == 1) {
+			System.out.print("Introduce las millas: ");
+			double litros = Double.parseDouble(sc.nextLine());
+			System.out.println(litros + " litros -> " + Litros_Gal(litros) + " galones");
+		} else if (opcion == 2) {
+			System.out.print("Introduce los kilómetros: ");
+			double galones = Double.parseDouble(sc.nextLine());
+			System.out.println(galones + " galones -> " + Gal_Litros(galones) + " litros");
+		}
+		sc.close();
+		return;
 	} 
 	
-public static double Celsius_Fah(double temp) {
-	return (temp * (9/5)) + 32;
-}
-public static double Fah_Celsius(double temp) {
-	return (temp - 32) * (5.0/9.0);  
-}
+	
+	private static double Celsius_Fah(double temp) {
+		return (temp * (9/5)) + 32;
+	}
+	private static double Fah_Celsius(double temp) {
+		return (temp - 32) * (5.0/9.0);  
+	}
 
 
-public static double Litros_Gal(double Vol) {
-	return Vol * 0.264172;    
-}
-public static double Gal_Litros(double Vol) {
-	return Vol * 3.785411784;      
-}
+	private static double Litros_Gal(double Vol) {
+		return Vol * 0.264172;    
+	}
+	private static double Gal_Litros(double Vol) {
+		return Vol * 3.785411784;      
+	}
 
 }
