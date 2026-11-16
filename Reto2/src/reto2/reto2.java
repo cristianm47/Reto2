@@ -33,10 +33,10 @@ public class reto2 {
 					Funciones2.menuVolumen();
 					break;
 				case 5:
-					Funciones2.menuMoneda();
+					Funciones3.menuMoneda();
 					break;
 				case 6:
-					Funciones2.menuAngulo();
+					Funciones3.menuAngulo();
 					break;
 				case 0:
 					System.out.println("Fin del programa.");
