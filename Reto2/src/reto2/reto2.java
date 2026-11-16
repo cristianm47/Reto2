@@ -28,7 +28,7 @@ public class reto2 {
 					//Temperatura
 					break;
 				case 4:
-					//Volumen
+					//Volumenn
 					break;
 				case 0:
 					System.out.println("Fin del programa.");
